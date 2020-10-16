@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SpeakService } from '../servicios/speak.service';
 
 @Component({
   selector: 'app-perfil',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
-  constructor() { }
+  constructor(private speak:SpeakService) { }
 
   ngOnInit(): void {
   }
