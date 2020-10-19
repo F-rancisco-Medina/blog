@@ -8,6 +8,7 @@ import Speech from 'speak-tts';
 })
 export class SpeakService {
   speech:any;
+  datos: any;
 
 
   constructor() { 
@@ -27,5 +28,28 @@ export class SpeakService {
         });
     }
     console.log("SE configuro");
+    this.datos = 'aloja';
+  }
+
+  start(){
+    console.log(this.datos);
+    this.speech.speak({ 
+      text: this.datos,
+    });
+  }
+
+  pause(){
+    this.speech.pause();
+    console.log("f");
+  }
+
+  resume(){
+    this.speech.resume();
+    console.log("f1");
+  }
+
+  cancelar(){
+    this.speech.cancel();
+    console.log("f3");
   }
 }
