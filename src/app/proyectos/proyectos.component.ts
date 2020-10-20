@@ -8,9 +8,21 @@ import { SpeakService } from '../servicios/speak.service';
 })
 export class ProyectosComponent implements OnInit {
 
-  constructor(private speak:SpeakService) { }
+  constructor(private speak:SpeakService) {
+    this.start();
+   }
 
   ngOnInit(): void {
   }
+
+  start(){
+    this.speak.start();
+  }
+
+  pause(){}
+
+  cancelar(){}
+
+  resumen(){}
 
 }
