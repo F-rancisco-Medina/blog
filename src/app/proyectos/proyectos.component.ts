@@ -10,6 +10,9 @@ export class ProyectosComponent implements OnInit {
 
   constructor(private speak:SpeakService) {
     this.start();
+    this.pause();
+    this.cancelar();
+    this.resumen();
    }
 
   ngOnInit(): void {
@@ -17,12 +20,22 @@ export class ProyectosComponent implements OnInit {
 
   start(){
     this.speak.start();
+    console.log("f1");
   }
 
-  pause(){}
+  pause(){
+    this.speak.pause();
+    console.log('f2');
+  }
 
-  cancelar(){}
+  cancelar(){
+    this.speak.cancelar();
+    console.log("f3");
+  }
 
-  resumen(){}
+  resumen(){
+    this.speak.resume();
+    console.log("f4");
+  }
 
 }
