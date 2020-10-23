@@ -9,6 +9,7 @@ import { SpeakService } from '../servicios/speak.service';
 export class ProyectosComponent implements OnInit {
 
   constructor(private speak:SpeakService) {
+    this.speak.setDatos("HOLA");
     this.start();
     this.pause();
     this.cancelar();

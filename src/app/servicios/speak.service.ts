@@ -8,8 +8,7 @@ import Speech from 'speak-tts';
 })
 export class SpeakService {
   speech:any;
-  datos: any;
-
+  datos: String;
 
   constructor() { 
     console.log("Hola");
@@ -28,7 +27,7 @@ export class SpeakService {
         });
     }
     console.log("SE configuro");
-    this.datos = 'aloja';
+    //this.datos = 'aloja'
   }
 
   start(){
@@ -52,4 +51,10 @@ export class SpeakService {
     this.speech.cancel();
     console.log("f3");
   }
+
+  setDatos(aux:string){
+    this.datos = aux;
+    console.log(this.datos);
+  }
+
 }
