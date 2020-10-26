@@ -40,6 +40,18 @@ export class ContactoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  pause(){
+    this.speech.pause();
+    console.log("f");
+  }
 
+  resume(){
+    this.speech.resume();
+    console.log("f1");
+  }
 
+  cancelar(){
+    this.speech.cancel();
+    console.log("f3");
+  }
 }
