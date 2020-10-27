@@ -26,7 +26,13 @@ export class ContactoComponent implements OnInit {
         });
         
     }
-    this.datos += "¿Quiénes Somos?..¿Qué es E-Tienda?.Somos la tienda online de abarrotes líder de América Latina";
+    this.datos = ".. ";
+    this.datos += "Puedes contactarme por redes sociales: .";
+    this.datos += " Por Git hub, https dos puntos diagonal diagonal git hub punto com diagonal Paco Medina Mz..";
+    this.datos += "Por Linked In: triple w linked in punto com diagonal in diagonal paco guión medina mz ..";
+    this.datos += "Por Correo: paco medina punto 05 punto 12 punto 99 @ out look punto com ..";
+    this.datos += "Por Twitter: https dos puntos diagonal twitter punto com diagonal Paco Medina Mz";
+
     this.start();
    }
 
