@@ -27,18 +27,17 @@ export class HomeComponent implements OnInit {
         
     }
     this.datos = ".. ";
-    this.datos += "Esté blog es un portafolio donde sea muestran los proyectos personales realizados por mí";
+    this.datos += " Esté blog es un portafolio donde se muestran los proyectos personales realizados por mí";
     this.datos += " . Está página web cuenta con diferentes secciones, las cuales permite dar a conocer ";
     this.datos += "mis conocimientos  y experiencia en programación.";
 
-    this.start();
    }
 
    start(){
     console.log(this.datos);
     this.speech.speak({ 
       text: this.datos,
-    });
+    });console.log("work");
   }
 
   ngOnInit(): void {
