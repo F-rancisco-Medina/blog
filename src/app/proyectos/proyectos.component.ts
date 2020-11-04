@@ -28,8 +28,6 @@ export class ProyectosComponent implements OnInit {
         
     }
     this.datos = "Hola.";
-
-    this.start();
    }
 
    start(){
