@@ -27,7 +27,7 @@ export class ProyectosComponent implements OnInit {
         });
         
     }
-    this.datos = "Hola.";
+    this.datos = "Los proyectos son:... ";
    }
 
    start(){
