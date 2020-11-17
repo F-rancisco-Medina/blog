@@ -32,6 +32,9 @@ export class PerfilComponent implements OnInit {
     this.datos += "Soy un estudiante de Ingeniería en sistemas computacionales de la Universidad autónoma de Aguascalientes.";
     this.datos += "Mi principal rama de la programación son los sistemas web, los cuales he estado estudiando y practicando durante un";
     this.datos += "año.";
+    this.datos += "En nivel principiante domino: .. Bases de datos S Q L,  base de datos no S Q L";
+    this.datos += "En nivel básico son: . Estructuras de datos, Java, Unix, Redes, C S S, p h p, angular, electronica, java script, git, c, c++";
+    this.datos += "Y en intermedio tenemos a HTML";
    }
 
    start(){
