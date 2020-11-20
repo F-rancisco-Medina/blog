@@ -28,6 +28,9 @@ export class ProyectosComponent implements OnInit {
         
     }
     this.datos = "Los proyectos son:... ";
+    this.datos += "Blog y E tienda en angular.";
+    this.datos += "Cálculadora de números complejos y calculadora de transistores en Java..";
+    this.datos += "Pacman en Phaser";
    }
 
    start(){
